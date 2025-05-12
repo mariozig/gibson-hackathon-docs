@@ -21,6 +21,17 @@ When I ran this prompt it took close to 9 hours to complete. 🐢🐢🐢
 
 Gemini 2.5 Pro
 
+### API Keys
+
+You will need API keys for the following: 
+
+* Perplexity (for Task Master)
+* Anthropic (for Task Master)
+* OpenAI (for usage of the Whisper API audio -> text)
+* Google Maps (for plotting points on a map)
+
+**Note**: These will ultimately be use as environment variables but the model creates .env files differently every time. 
+
 ### Required MCP Servers
 
 * Gibson AI
