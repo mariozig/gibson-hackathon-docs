@@ -13,7 +13,7 @@ Below is a list of projects created during the hackathon. Each project has its o
 ### 1. GibbyGotBack
 
 *   **Description**: A cloud-based backup utility that provides efficient file backup and restoration capabilities using a personal Gibson AI database instance.
-*   **Technologies**: Node.js, TypeScript, Gibson AI, Task Master AI.
+*   **Technologies**: Node.js, TypeScript, Gibson AI
 *   **Details**: [GibbyGotBack README](./gibbygotback/README.md)
 
 ### 2. LocalStoryVault
