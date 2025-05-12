@@ -1,1 +1,53 @@
-.windsurfrules
+Do not git ignore .env files
+
+
+## GibsonAI
+
+### Overview
+
+GibsonAI is an AI-powered cloud database platform. It integrates with Windsurf via a Model Context Protocol (MCP) server, enabling schema management, data modeling, and natural language operations.
+
+### MCP Server Integration
+
+GibsonAI MCP commands allow Windsurf to manage projects and schemas via natural language. 
+
+Supported MCP commands include:
+
+- `get_projects`
+- `create_project`
+- `get_project_details`
+- `get_project_hosted_api_details`
+- `update_project`
+- `submit_data_modeling_request`
+- `deploy_project`
+- `get_project_schema`
+- `get_deployed_schema`
+- `query_database`
+
+Use these for schema generation, updates, inspection, and deployment.
+
+### API Conventions
+
+> 🔒 **NEVER expose Gibson API keys to the frontend. All calls must happen server-side.**
+
+- Base URL: `https://api.gibsonai.com`
+- Auth Header: `X-Gibson-API-Key: [API Key]` (server-side only)
+- All API endpoints use:
+  - `/v1/-/` base path
+  - Kebab-case, e.g., `/v1/-/user-profile-metadata`
+
+### Schema Conventions
+
+- Use **snake_case** for all table and column names.
+- Required fields for all tables:
+  - `id`: internal, auto-incrementing primary key (integer)
+  - `uuid`: external reference (UUID string)
+  - Timestamps: `created_at`, `updated_at`, and optionally `deleted_at`
+- Foreign key naming: `[referenced_table]_id`
+
+### Working with GibsonAI in Windsurf
+
+When assisting with GibsonAI projects:
+
+1. Look for a `.gibsonai` file in the project root to detect active configuration.
+2. Use MCP commands to inspect or update the project schema.
