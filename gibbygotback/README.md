@@ -8,7 +8,10 @@ GibbyGotBack is a cloud-based backup utility that provides efficient file backup
 
 ### Editor
 
-Windsurf
+#### Windsurf
+
+* Add this project's `.windsurfrules` file to your project root.
+* Delete all saved windsurf memories
 
 ### Model
 

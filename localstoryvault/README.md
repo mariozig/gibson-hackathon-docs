@@ -12,7 +12,10 @@ When I ran this prompt it took close to 9 hours to complete. 🐢🐢🐢
 
 ### Editor
 
-Windsurf
+#### Windsurf
+
+* Add this project's `.windsurfrules` file to your project root.
+* Delete all saved windsurf memories
 
 ### Model
 
